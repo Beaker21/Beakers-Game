@@ -35,11 +35,16 @@ let GameManager = {
     let getActions = document.querySelector(".actions")
     let getEnemy = document.querySelector(".enemy")
     // Create Enemy!
-    let enemy00 = new Enemy("Goblin", 100, 0, 50, 100, 100);
+    let enemy00 = new Enemy("Crocodile", 100, 0, 50, 100, 100);
     let enemy01 = new Enemy("Troll", 200, 0, 150, 80, 150);
     let enemy02 = new Enemy("Zombie", 100, 0, 50, 100, 100);
-    let enemy03 = new Enemy("Vampire", 100, 0, 50, 100, 100);
-    let chooseRandomEnemy = Math.floor(Math.random()* Math.floor(4));
+    let enemy03 = new Enemy("DeadPirate", 100, 0, 50, 100, 100);
+    let enemy04 = new Enemy("Necromancer", 100, 0, 50, 100, 100);
+    let enemy05 = new Enemy("Ghost", 95, 0, 50, 100, 105);
+    let enemy06 = new Enemy("Pirate", 75, 150, 0, 25, 100);
+    let enemy07 = new Enemy("Ninja", 100, 0, 25, 50, 175);
+    
+    let chooseRandomEnemy = Math.floor(Math.random()* Math.floor(8));
     switch (chooseRandomEnemy) {
       case 0:
         enemy = enemy00;
@@ -52,6 +57,18 @@ let GameManager = {
         break;
       case 3:
         enemy = enemy03;
+        break;
+      case 4:
+        enemy = enemy04;
+        break;
+      case 5:
+        enemy = enemy05;
+        break;
+      case 6:
+        enemy = enemy06;
+        break;
+      case 7:
+        enemy = enemy07;
         break;
     }
     getHeader.innerHTML = '<p>Task: Choose your move</p>';

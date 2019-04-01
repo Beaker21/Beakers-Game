@@ -122,11 +122,12 @@ body {
   width: 100%;
   height: 180px;
   background-color: #1d373d;
-  background-image: url("/beaksgame/img/arena-bg.png");
+  background-image: url("../beaksgame/img/arena-bg.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 35vh;
-  visibility: hidden;
+  background-size: 85vh;
+ 
+  
 }
 
 .enemy {
